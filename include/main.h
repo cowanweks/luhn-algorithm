@@ -8,6 +8,7 @@
 */
 
 #include <stdio.h>
+#include <string.h>
 #include <stdbool.h>
 
 // Define constants
@@ -15,20 +16,8 @@
 
 long card;
 
-void get_card()
-{
-   do
-   {
-      printf("Please input your credit-card/debit-card number\n");
-      scanf("%ld", &card);
-
-   } while (card <= 0);
-}
-
-void print_card_no(long &card)
-{
-   char *card = (card *)card;
-   printf("%s", card);
-}
+void get_card();
+void validate_card();
+void print_card_no();
 
 #endif // __MAIN__H
